@@ -18,7 +18,7 @@
 	<key>currentSequenceId</key>
 	<integer>0</integer>
 	<key>docDimensionsType</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>fileType</key>
 	<string>CocosBuilder</string>
 	<key>fileVersion</key>
@@ -35,15 +35,13 @@
 	<false/>
 	<key>nodeGraph</key>
 	<dict>
-		<key>UUID</key>
-		<integer>1</integer>
 		<key>baseClass</key>
 		<string>CCNode</string>
 		<key>children</key>
 		<array>
 			<dict>
 				<key>UUID</key>
-				<integer>4</integer>
+				<integer>5</integer>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
@@ -51,7 +49,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>background</string>
+				<string>roll</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -73,10 +71,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
+							<real>0.0</real>
 							<real>0.0</real>
 							<integer>0</integer>
-							<integer>2</integer>
+							<integer>0</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -87,7 +85,7 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
+							<real>0.0</real>
 							<real>0.0</real>
 						</array>
 					</dict>
@@ -112,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/assets_default/background.png</string>
+							<string>ccbResources/assets_default/roll.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -151,83 +149,29 @@
 			</dict>
 			<dict>
 				<key>UUID</key>
-				<integer>5</integer>
-				<key>baseClass</key>
-				<string>CCBFile</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>Character</string>
-				<key>memberVarAssignmentName</key>
-				<string>character</string>
-				<key>memberVarAssignmentType</key>
-				<integer>1</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>0.5</real>
-							<real>0.0</real>
-							<integer>0</integer>
-							<integer>2</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>Character.ccb</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>UUID</key>
 				<integer>6</integer>
 				<key>baseClass</key>
-				<string>CCBFile</string>
+				<string>CCSprite</string>
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>piece</string>
+				<string>left</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>left</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
 				<array>
+					<dict>
+						<key>name</key>
+						<string>visible</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<false/>
+					</dict>
 					<dict>
 						<key>name</key>
 						<string>name</string>
@@ -243,11 +187,22 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
+							<real>0.0</real>
+							<real>50</real>
+							<integer>0</integer>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
 							<real>0.5</real>
-							<real>-30</real>
-							<integer>0</integer>
-							<integer>2</integer>
-							<integer>0</integer>
 						</array>
 					</dict>
 					<dict>
@@ -265,11 +220,46 @@
 					</dict>
 					<dict>
 						<key>name</key>
-						<string>ccbFile</string>
+						<string>spriteFrame</string>
 						<key>type</key>
-						<string>CCBFile</string>
+						<string>SpriteFrame</string>
 						<key>value</key>
-						<string>Piece.ccb</string>
+						<array>
+							<string></string>
+							<string>ccbResources/assets_default/chopstick.png</string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>normalMapSpriteFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string></string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>color</string>
+						<key>type</key>
+						<string>Color3</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>effects</string>
+						<key>type</key>
+						<string>EffectControl</string>
+						<key>value</key>
+						<array/>
 					</dict>
 				</array>
 			</dict>
@@ -277,19 +267,27 @@
 				<key>UUID</key>
 				<integer>7</integer>
 				<key>baseClass</key>
-				<string>CCNode</string>
+				<string>CCSprite</string>
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCNode</string>
+				<string>right</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>right</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
 				<array>
+					<dict>
+						<key>name</key>
+						<string>visible</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<false/>
+					</dict>
 					<dict>
 						<key>name</key>
 						<string>name</string>
@@ -305,22 +303,9 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
-							<real>28</real>
-							<integer>0</integer>
-							<integer>2</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>contentSize</string>
-						<key>type</key>
-						<string>Size</string>
-						<key>value</key>
-						<array>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>50</real>
+							<integer>3</integer>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -333,7 +318,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>0.5</real>
 						</array>
 					</dict>
 					<dict>
@@ -349,13 +334,65 @@
 							<integer>0</integer>
 						</array>
 					</dict>
+					<dict>
+						<key>name</key>
+						<string>spriteFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string>ccbResources/assets_default/chopstick.png</string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>normalMapSpriteFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string></string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>color</string>
+						<key>type</key>
+						<string>Color3</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>flip</string>
+						<key>type</key>
+						<string>Flip</string>
+						<key>value</key>
+						<array>
+							<true/>
+							<false/>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>effects</string>
+						<key>type</key>
+						<string>EffectControl</string>
+						<key>value</key>
+						<array/>
+					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>MainScene</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -370,7 +407,7 @@
 				<key>type</key>
 				<string>StringSimple</string>
 				<key>value</key>
-				<string></string>
+				<string>Piece</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -393,10 +430,10 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>1</real>
-					<real>1</real>
-					<integer>2</integer>
-					<integer>2</integer>
+					<real>105</real>
+					<real>60</real>
+					<integer>0</integer>
+					<integer>0</integer>
 				</array>
 			</dict>
 			<dict>
@@ -406,7 +443,7 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>0.0</real>
+					<real>0.5</real>
 					<real>0.0</real>
 				</array>
 			</dict>
@@ -435,13 +472,13 @@
 			<key>ext</key>
 			<string>phone</string>
 			<key>height</key>
-			<integer>568</integer>
+			<integer>0</integer>
 			<key>name</key>
-			<string>Phone Portrait</string>
+			<string>Phone</string>
 			<key>scale</key>
 			<real>1</real>
 			<key>width</key>
-			<integer>320</integer>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>centeredOrigin</key>
@@ -449,27 +486,13 @@
 			<key>ext</key>
 			<string>tablet phonehd</string>
 			<key>height</key>
-			<integer>512</integer>
+			<integer>0</integer>
 			<key>name</key>
-			<string>Tablet Portrait</string>
+			<string>Tablet</string>
 			<key>scale</key>
 			<real>2</real>
 			<key>width</key>
-			<integer>384</integer>
-		</dict>
-		<dict>
-			<key>centeredOrigin</key>
-			<false/>
-			<key>ext</key>
-			<string>phone</string>
-			<key>height</key>
-			<integer>480</integer>
-			<key>name</key>
-			<string>iPhone Portrait (short)</string>
-			<key>scale</key>
-			<real>1</real>
-			<key>width</key>
-			<integer>320</integer>
+			<integer>0</integer>
 		</dict>
 	</array>
 	<key>sequences</key>
@@ -482,7 +505,7 @@
 				<key>keyframes</key>
 				<array/>
 				<key>type</key>
-				<integer>11</integer>
+				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
 			<integer>-1</integer>
@@ -507,13 +530,13 @@
 				<key>keyframes</key>
 				<array/>
 				<key>type</key>
-				<integer>10</integer>
+				<integer>11</integer>
 			</dict>
 		</dict>
 	</array>
 	<key>stageBorder</key>
-	<integer>0</integer>
+	<integer>3</integer>
 	<key>stageColor</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
