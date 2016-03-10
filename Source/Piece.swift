@@ -6,6 +6,6 @@
 //  Copyright © 2016 Apportable. All rights reserved.
 //
 
-class Piece: CCSprite {
+class Piece: CCNode {
 
 }
