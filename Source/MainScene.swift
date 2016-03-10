@@ -7,6 +7,11 @@ enum Side {
 class MainScene: CCNode {
 
     weak var scoreLabel: CCLabelTTF!
+    var score: Int = 0 {
+        didSet {
+            scoreLabel.string = "\(score)"
+        }
+    }
     
     var gameOver = false
     weak var restartButton: CCButton!
@@ -40,7 +45,7 @@ class MainScene: CCNode {
             pieceLastSide = piece.setObstacle(pieceLastSide)
             
             let yPos = piece.contentSizeInPoints.height * CGFloat(i)
-            piece.position = CGPoint(x: 0.0, y: yPos)
+            piece.position = CGPoint(x: 50.0, y: yPos)
             piecesNode.addChild(piece)
             pieces.append(piece)
         }
@@ -61,6 +66,8 @@ class MainScene: CCNode {
         else {
             character.right()
         }
+        
+        score++
     }
     
     func restart() {
