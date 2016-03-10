@@ -8,4 +8,12 @@
 
 class Character: CCSprite {
 
+    func left() {
+        scaleX = 1
+    }
+    
+    func right() {
+        scaleX = -1
+    }
+    
 }
