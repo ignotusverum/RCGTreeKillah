@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>74</integer>
+	<integer>85</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -1934,33 +1934,7 @@
 				<key>animatedProperties</key>
 				<dict>
 					<key>0</key>
-					<dict>
-						<key>visible</key>
-						<dict>
-							<key>keyframes</key>
-							<array>
-								<dict>
-									<key>easing</key>
-									<dict>
-										<key>type</key>
-										<integer>0</integer>
-									</dict>
-									<key>name</key>
-									<string>visible</string>
-									<key>time</key>
-									<real>0.0</real>
-									<key>type</key>
-									<integer>1</integer>
-									<key>value</key>
-									<true/>
-								</dict>
-							</array>
-							<key>name</key>
-							<string>visible</string>
-							<key>type</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
+					<dict/>
 					<key>1</key>
 					<dict>
 						<key>visible</key>
@@ -2012,7 +1986,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2135,7 +2109,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonHighlighted.png</string>
+							<string>ccbResources/assets_default/button.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -2159,7 +2133,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>ccbResources/assets_default/button.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -2178,7 +2152,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string>ccbResources/assets_default/button.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -2333,33 +2307,7 @@
 				<key>animatedProperties</key>
 				<dict>
 					<key>0</key>
-					<dict>
-						<key>visible</key>
-						<dict>
-							<key>keyframes</key>
-							<array>
-								<dict>
-									<key>easing</key>
-									<dict>
-										<key>type</key>
-										<integer>0</integer>
-									</dict>
-									<key>name</key>
-									<string>visible</string>
-									<key>time</key>
-									<real>0.0</real>
-									<key>type</key>
-									<integer>1</integer>
-									<key>value</key>
-									<true/>
-								</dict>
-							</array>
-							<key>name</key>
-							<string>visible</string>
-							<key>type</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
+					<dict/>
 					<key>1</key>
 					<dict>
 						<key>visible</key>
@@ -2602,61 +2550,7 @@
 						<key>animatedProperties</key>
 						<dict>
 							<key>0</key>
-							<dict>
-								<key>position</key>
-								<dict>
-									<key>keyframes</key>
-									<array>
-										<dict>
-											<key>easing</key>
-											<dict>
-												<key>type</key>
-												<integer>1</integer>
-											</dict>
-											<key>name</key>
-											<string>position</string>
-											<key>time</key>
-											<real>0.0</real>
-											<key>type</key>
-											<integer>3</integer>
-											<key>value</key>
-											<array>
-												<real>190</real>
-												<real>38</real>
-											</array>
-										</dict>
-									</array>
-									<key>name</key>
-									<string>position</string>
-									<key>type</key>
-									<integer>3</integer>
-								</dict>
-								<key>visible</key>
-								<dict>
-									<key>keyframes</key>
-									<array>
-										<dict>
-											<key>easing</key>
-											<dict>
-												<key>type</key>
-												<integer>0</integer>
-											</dict>
-											<key>name</key>
-											<string>visible</string>
-											<key>time</key>
-											<real>0.0</real>
-											<key>type</key>
-											<integer>1</integer>
-											<key>value</key>
-											<true/>
-										</dict>
-									</array>
-									<key>name</key>
-									<string>visible</string>
-									<key>type</key>
-									<integer>1</integer>
-								</dict>
-							</dict>
+							<dict/>
 							<key>1</key>
 							<dict>
 								<key>position</key>
@@ -2758,16 +2652,6 @@
 						<key>properties</key>
 						<array>
 							<dict>
-								<key>baseValue</key>
-								<integer>1</integer>
-								<key>name</key>
-								<string>visible</string>
-								<key>type</key>
-								<string>Check</string>
-								<key>value</key>
-								<true/>
-							</dict>
-							<dict>
 								<key>name</key>
 								<string>name</string>
 								<key>type</key>
@@ -2787,7 +2671,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>190</real>
+									<real>195</real>
 									<real>38</real>
 									<integer>3</integer>
 									<integer>0</integer>
@@ -2884,7 +2768,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>name</key>
