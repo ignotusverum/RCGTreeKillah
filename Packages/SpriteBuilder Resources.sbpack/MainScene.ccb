@@ -10,13 +10,13 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>68</integer>
+	<integer>72</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>docDimensionsType</key>
 	<integer>0</integer>
 	<key>fileType</key>
@@ -1768,8 +1768,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>0.53437501192092896</real>
-									<real>184</real>
+									<real>0.5</real>
+									<real>450</real>
 									<integer>0</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -1835,7 +1835,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<false/>
+						<true/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1984,7 +1984,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2462,7 +2462,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>261.20001220703125</real>
+									<real>259</real>
 									<real>38</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2731,7 +2731,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>192</real>
+									<real>190</real>
 									<real>38</real>
 									<integer>3</integer>
 									<integer>0</integer>
@@ -2828,7 +2828,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -3033,7 +3033,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>1.6333333253860474</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
