@@ -67,7 +67,7 @@ class MainScene: CCNode {
             character.right()
         }
         
-        score++
+        score = score + 1
     }
     
     func restart() {
