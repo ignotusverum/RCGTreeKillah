@@ -4,6 +4,10 @@ enum Side {
     case Left, Right, None
 }
 
+enum GameState {
+    case Title, Ready, Playing, GameOver
+}
+
 class MainScene: CCNode {
 
     weak var scoreLabel: CCLabelTTF!
@@ -13,11 +17,13 @@ class MainScene: CCNode {
         }
     }
     
-    var gameOver = false
+    var gameState: GameState = .Title
     weak var restartButton: CCButton!
     
     weak var piecesNode: CCNode!
     var pieces: [Piece] = []
+    
+    weak var tapButtons: CCNode!
     
     weak var character: Character!
     
@@ -53,7 +59,9 @@ class MainScene: CCNode {
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
     
-        if gameOver { return }
+        if gameState == .GameOver || gameState == .Title { return }
+        
+        if gameState == .Ready { start() }
         
         stepTower()
         
@@ -71,7 +79,13 @@ class MainScene: CCNode {
     }
     
     func restart() {
-        let scene = CCBReader.loadAsScene("MainScene")
+        
+        let mainScene = CCBReader.load("MainScene") as! MainScene
+        mainScene.ready()
+        
+        let scene = CCScene()
+        scene.addChild(mainScene)
+        
         CCDirector.sharedDirector().presentScene(scene)
     }
     
@@ -96,8 +110,27 @@ class MainScene: CCNode {
         timeLeft = timeLeft + 0.25
     }
     
+    func start() {
+        gameState = .Playing
+        
+        tapButtons.runAction(CCActionFadeOut(duration: 0.2))
+    }
+    
+    func ready() {
+        
+        gameState = .Ready
+        
+        self.animationManager.runAnimationsForSequenceNamed("Ready")
+        
+        tapButtons.cascadeOpacityEnabled = true
+        tapButtons.opacity = 0.0
+        tapButtons.runAction(CCActionFadeIn(duration: 0.2))
+    }
+    
     func triggerGameOver() {
-        gameOver = true
+        
+        if gameState == .Playing { return }
+        
         restartButton.visible = true
     }
     
@@ -106,11 +139,11 @@ class MainScene: CCNode {
         
         if newPiece.side == character.side { triggerGameOver() }
         
-        return gameOver
+        return gameState == .GameOver
     }
     
     override func update(delta: CCTime) {
-        if gameOver { return }
+        if gameState == .GameOver { return }
         timeLeft -= Float(delta)
         if timeLeft == 0 {
             triggerGameOver()
