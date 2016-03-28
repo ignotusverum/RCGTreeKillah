@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>72</integer>
+	<integer>74</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -1933,6 +1933,34 @@
 				<integer>40</integer>
 				<key>animatedProperties</key>
 				<dict>
+					<key>0</key>
+					<dict>
+						<key>visible</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>0</integer>
+									</dict>
+									<key>name</key>
+									<string>visible</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>1</integer>
+									<key>value</key>
+									<true/>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>visible</string>
+							<key>type</key>
+							<integer>1</integer>
+						</dict>
+					</dict>
 					<key>1</key>
 					<dict>
 						<key>visible</key>
@@ -1984,7 +2012,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<false/>
+						<true/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2294,6 +2322,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
@@ -2303,7 +2333,33 @@
 				<key>animatedProperties</key>
 				<dict>
 					<key>0</key>
-					<dict/>
+					<dict>
+						<key>visible</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>0</integer>
+									</dict>
+									<key>name</key>
+									<string>visible</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>1</integer>
+									<key>value</key>
+									<true/>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>visible</string>
+							<key>type</key>
+							<integer>1</integer>
+						</dict>
+					</dict>
 					<key>1</key>
 					<dict>
 						<key>visible</key>
@@ -2828,7 +2884,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<false/>
+						<true/>
 					</dict>
 					<dict>
 						<key>name</key>
