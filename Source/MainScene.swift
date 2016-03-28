@@ -143,7 +143,9 @@ class MainScene: CCNode {
     }
     
     override func update(delta: CCTime) {
-        if gameState == .GameOver { return }
+        
+        if gameState == .GameOver || gameState == .Title { return }
+        
         timeLeft -= Float(delta)
         if timeLeft == 0 {
             triggerGameOver()
