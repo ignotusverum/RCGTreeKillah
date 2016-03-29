@@ -125,6 +125,7 @@ class MainScene: CCNode {
         tapButtons.cascadeOpacityEnabled = true
         tapButtons.opacity = 0.0
         tapButtons.runAction(CCActionFadeIn(duration: 0.2))
+        
     }
     
     func triggerGameOver() {
