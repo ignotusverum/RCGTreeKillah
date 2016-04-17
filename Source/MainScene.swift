@@ -17,6 +17,8 @@ class MainScene: CCNode {
         }
     }
     
+    weak var readyButton: CCButton!
+    
     var gameState: GameState = .Title
     weak var restartButton: CCButton!
     
@@ -111,9 +113,8 @@ class MainScene: CCNode {
     }
     
     func start() {
-        gameState = .Playing
         
-        tapButtons.runAction(CCActionFadeOut(duration: 0.2))
+        gameState = .Playing
     }
     
     func ready() {
@@ -124,8 +125,7 @@ class MainScene: CCNode {
         
         tapButtons.cascadeOpacityEnabled = true
         tapButtons.opacity = 0.0
-        tapButtons.runAction(CCActionFadeIn(duration: 0.2))
-        
+        tapButtons.runAction(CCActionFadeOut(duration: 0.2))
     }
     
     func triggerGameOver() {

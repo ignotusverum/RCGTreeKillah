@@ -10,13 +10,13 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>89</integer>
+	<integer>92</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>docDimensionsType</key>
 	<integer>0</integer>
 	<key>fileType</key>
@@ -1768,8 +1768,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>0.5</real>
-									<real>450</real>
+									<real>0.53437501192092896</real>
+									<real>184</real>
 									<integer>0</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -1835,7 +1835,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2129,13 +2129,13 @@
 						<array>
 							<dict>
 								<key>baseValue</key>
-								<integer>1</integer>
+								<false/>
 								<key>name</key>
 								<string>visible</string>
 								<key>type</key>
 								<string>Check</string>
 								<key>value</key>
-								<true/>
+								<false/>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -2157,7 +2157,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>259</real>
+									<real>261.20001220703125</real>
 									<real>38</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2370,13 +2370,13 @@
 						<array>
 							<dict>
 								<key>baseValue</key>
-								<integer>1</integer>
+								<false/>
 								<key>name</key>
 								<string>visible</string>
 								<key>type</key>
 								<string>Check</string>
 								<key>value</key>
-								<true/>
+								<false/>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -2398,7 +2398,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>195</real>
+									<real>192</real>
 									<real>38</real>
 									<integer>3</integer>
 									<integer>0</integer>
@@ -2547,7 +2547,7 @@
 						<key>displayName</key>
 						<string>CCButton</string>
 						<key>memberVarAssignmentName</key>
-						<string></string>
+						<string>readyButton</string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -2870,6 +2870,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 						<key>seqExpanded</key>
 						<true/>
 					</dict>
@@ -2954,8 +2956,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
