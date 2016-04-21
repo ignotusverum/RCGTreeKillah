@@ -56,6 +56,8 @@ class MainScene: CCNode {
             piece.position = CGPoint(x: 50.0, y: yPos)
             piecesNode.addChild(piece)
             pieces.append(piece)
+            
+            self.animationManager.runAnimationsForSequenceNamed("Ready")
         }
     }
     
@@ -120,8 +122,6 @@ class MainScene: CCNode {
     func ready() {
         
         gameState = .Ready
-        
-        self.animationManager.runAnimationsForSequenceNamed("Ready")
         
         self.readyButton.userInteractionEnabled = false
         
