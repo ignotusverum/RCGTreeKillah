@@ -123,6 +123,9 @@ class MainScene: CCNode {
         
         self.animationManager.runAnimationsForSequenceNamed("Ready")
         
+//        self.readyButton.visible = false
+        self.readyButton.userInteractionEnabled = false
+        
         tapButtons.cascadeOpacityEnabled = true
         tapButtons.opacity = 0.0
         tapButtons.runAction(CCActionFadeOut(duration: 0.2))
