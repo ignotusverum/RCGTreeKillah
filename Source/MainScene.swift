@@ -61,11 +61,7 @@ class MainScene: CCNode {
             pieces.append(piece)
         }
         
-        let setup = GlobalSetup.sharedSetup
-        
-        if setup.numberOfDeaths == 0 {
-            self.animationManager.runAnimationsForSequenceNamed("Initial Timeline")
-        }
+        self.animationManager.runAnimationsForSequenceNamed("Initial Timeline")
     }
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
