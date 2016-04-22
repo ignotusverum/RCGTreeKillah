@@ -135,6 +135,8 @@ class MainScene: CCNode {
         
         gameLogo.runAction(CCActionFadeOut(duration: 0.2))
         tapButtons.runAction(CCActionFadeOut(duration: 0.2))
+        
+        scoreLabel.visible = true
     }
     
     func triggerGameOver() {
