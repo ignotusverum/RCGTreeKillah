@@ -61,7 +61,9 @@ class MainScene: CCNode {
             pieces.append(piece)
         }
         
-        if gameState == .Title {
+        let setup = GlobalSetup.sharedSetup
+        
+        if setup.numberOfDeaths == 0 {
             self.animationManager.runAnimationsForSequenceNamed("Initial Timeline")
         }
     }
@@ -136,8 +138,12 @@ class MainScene: CCNode {
         gameLogo.cascadeOpacityEnabled = true
         gameLogo.opacity = 0.0
         
-        gameLogo.runAction(CCActionFadeOut(duration: 0.2))
-        tapButtons.runAction(CCActionFadeOut(duration: 0.2))
+        let setting = GlobalSetup.sharedSetup
+        
+        if setting.numberOfDeaths == 0 {
+            gameLogo.runAction(CCActionFadeOut(duration: 0.2))
+            tapButtons.runAction(CCActionFadeOut(duration: 0.2))
+        }
         
         scoreLabel.visible = true
         lifeBarNode.visible = true
@@ -145,9 +151,11 @@ class MainScene: CCNode {
     
     func triggerGameOver() {
         
-        if gameState == .Playing { return }
-        
         restartButton.visible = true
+        
+        let setup = GlobalSetup.sharedSetup
+        
+        setup.numberOfDeaths = setup.numberOfDeaths + 1
         
         gameState = .GameOver
     }
