@@ -36,6 +36,7 @@ class MainScene: CCNode {
     var pieceIndex: Int = 0
     
     weak var lifeBar: CCSprite!
+    weak var lifeBarNode: CCNode!
     
     var timeLeft: Float = 5 {
         didSet {
@@ -137,6 +138,7 @@ class MainScene: CCNode {
         tapButtons.runAction(CCActionFadeOut(duration: 0.2))
         
         scoreLabel.visible = true
+        lifeBarNode.visible = true
     }
     
     func triggerGameOver() {
