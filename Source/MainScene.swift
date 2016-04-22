@@ -61,7 +61,9 @@ class MainScene: CCNode {
             pieces.append(piece)
         }
         
-        self.animationManager.runAnimationsForSequenceNamed("Initial Timeline")
+        if gameState == .Title {
+            self.animationManager.runAnimationsForSequenceNamed("Initial Timeline")
+        }
     }
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
@@ -85,7 +87,7 @@ class MainScene: CCNode {
         score = score + 1
     }
     
-    func restart() {
+    func restartButtonPressed() {
         
         let mainScene = CCBReader.load("MainScene") as! MainScene
         mainScene.ready()
@@ -146,6 +148,8 @@ class MainScene: CCNode {
         if gameState == .Playing { return }
         
         restartButton.visible = true
+        
+        gameState = .GameOver
     }
     
     func isGameOver() -> Bool {
