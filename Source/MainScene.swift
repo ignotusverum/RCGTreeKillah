@@ -22,6 +22,8 @@ class MainScene: CCNode {
     var gameState: GameState = .Title
     weak var restartButton: CCButton!
     
+    weak var gameLogo: CCEffectNode!
+    
     weak var piecesNode: CCNode!
     var pieces: [Piece] = []
     
@@ -56,9 +58,9 @@ class MainScene: CCNode {
             piece.position = CGPoint(x: 50.0, y: yPos)
             piecesNode.addChild(piece)
             pieces.append(piece)
-            
-            self.animationManager.runAnimationsForSequenceNamed("Ready")
         }
+        
+        self.animationManager.runAnimationsForSequenceNamed("Initial Timeline")
     }
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
@@ -127,6 +129,11 @@ class MainScene: CCNode {
         
         tapButtons.cascadeOpacityEnabled = true
         tapButtons.opacity = 0.0
+        
+        gameLogo.cascadeOpacityEnabled = true
+        gameLogo.opacity = 0.0
+        
+        gameLogo.runAction(CCActionFadeOut(duration: 0.2))
         tapButtons.runAction(CCActionFadeOut(duration: 0.2))
     }
     
